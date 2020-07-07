@@ -7,7 +7,9 @@ def update_status
          :hero_friends => [
             {name: "Benvolio", age: "17", attitude: "worried"},
             {name: "Mercutio", age: "18", attitude: "hot-headed"}
+           
          ]
+        
       },
       :capulet => {
          :patriarch => {name: "Lord Capulet", age: "50"},
@@ -17,12 +19,14 @@ def update_status
          {name: "Steven", age: "30", attitude: "confused"},
          {name: "Nurse", age: "44", attitude: "worried"}
          ]
+        
       }
    }
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
-
+ epic_tragedy[:capulet][:heroine][:status] = "dead"
+  epic_tragedy[:montague][:hero][:status] = "dead"
 
 
 
@@ -50,8 +54,9 @@ def add_characters
          {name: "Nurse", age: "44", attitude: "worried"}
          ]
       }
+      
    }
-
+ 
    # Write code below that does the following programmatically:
    #
    # - Add an additional :additional_characters key to epic_tragedy and assign it an array as its value
@@ -60,7 +65,10 @@ def add_characters
    #   - The second hash should have the :name key set to "Apothecary" 
    # Code your solution here:
 
-
+epic_tragedy[:additional_characters] = [ 
+{name: "Prince Escalus"},
+{name: "Apothecary"}
+]
 
 
 
