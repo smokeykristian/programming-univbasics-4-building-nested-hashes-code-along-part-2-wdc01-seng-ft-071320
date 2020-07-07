@@ -54,8 +54,9 @@ def add_characters
          {name: "Nurse", age: "44", attitude: "worried"}
          ]
       }
+      epic_tragedy[:additional_characters => {:name => "Prince Escalus"} , {:name => "Apothecary"} 
    }
- epic_tragedy[:additional_characters => {:name => "Prince Escalus"} , {:name => "Apothecary"}] 
+ 
    # Write code below that does the following programmatically:
    #
    # - Add an additional :additional_characters key to epic_tragedy and assign it an array as its value
